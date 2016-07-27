@@ -1,0 +1,18 @@
+INSTALL:
+--------
+Just copy the files somewhere
+Create a list with your customers called customers.txt
+Then just run somewhere_you_put_it/eaglehour
+
+DEPENDECIES:
+------------
+python-sqlite
+python-gtk
+
+STARTUP:
+--------
+./eaglehour
+
+AT THE END OF THE DAY:
+----------------------
+./dailyreport > timesheet.txt :-)

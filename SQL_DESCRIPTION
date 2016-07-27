@@ -1,0 +1,33 @@
+Database layout
+---------------
+
+Table: Hours
+	HourId<Int>	CustomerId<Int>	StartTime<Int>	StopTime<Int>	Description<Char(255)>
+
+	HourId<Int>
+		Primary Key
+		Unique
+
+	CustomerId<Int>
+		Customer from Customers.CustomerId<Int>
+
+	StartTime<Int>
+		Start of project in UNIX_TIMESTAMP or TIMESTAMP
+
+	StopTime<Int>
+		Stop of project in UNIX_TIMESTAMP or TIMESTAMP
+
+	Description<Char(255)>
+		What did I do in the interval ?
+
+Table: Customers
+	CustomerId<Int>	CustomerName<Char(64)>
+	
+	CustomerId<Int>
+		Primary Key
+		Unique
+
+	CustomerName<Char(64)>
+		String with legal name of customer, etc.
+
+
