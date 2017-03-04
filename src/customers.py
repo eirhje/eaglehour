@@ -1,13 +1,13 @@
 class Customers():
     customers = []
-    
+
     def __init__(self, sql):
         self.customers = []
-        self.sql = sql   
- 
+        self.sql = sql
+
     def get_customers(self):
         return self.customers
-    
+
     def add_customer(self, custname):
         sqlid = self.sql.getCustomerId(custname)
         if len(sqlid) != 1:

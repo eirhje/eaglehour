@@ -1,12 +1,14 @@
 #!/usr/bin/env python
 
-#Import the required files
+# Import the required files
 from statusicon import StatusIcon
 from window import WindowGUI
 from customers import Customers
 from sql import SQLInterface
 
-import os, sys
+import os
+import sys
+
 
 def main():
     """ Connect to SQL """
@@ -26,4 +28,4 @@ def main():
 
 """ Launch into the background """
 if os.fork() == 0:
-	main()
+    main()
